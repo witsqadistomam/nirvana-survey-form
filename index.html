@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nirvana survey Form</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+<body>
+    <h1 id="title">Nirvana Survey Form</h1>
+    <p id="description">Please fill the form, Thank you.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+
+        <label for="email" id="email-label">
+            Email   
+            <input type="email" id="email" placeholder="Enter your email" required />
+        </label>
+        
+        <label for="age" id="number-label">
+            Age   
+            <input type="number" 
+            id="number" 
+            placeholder="Age" 
+            min="13" 
+            max="80"/>
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            How do you know about Nirvana?   
+
+            <select name="dropdown" id="dropdown">                          
+                <option value="Internet">Internet</option>
+                <option value="TV Show">TV Show</option>
+                <option value="Family">Family</option>
+                <option value="Friends">Friends</option>
+                <option value="Music Media">Music Media</option>
+            </select>
+        </label>
+        
+        
+        <p>Which one your favorite Album?</p>    
+        <label>
+            <input type="radio" name="album" id="album" value="Bleach">
+            Bleach
+        </label>
+        
+        <label>
+            <input type="radio" name="album" id="album" value="Nevermind">
+            Nevermind
+        </label>
+        
+        <label>
+            <input type="radio" name="album" id="album" value="MTV Unplugged In New York">
+           MTV Unplugged In New York
+        </label>
+        
+        <label>
+            <input type="radio" name="album" id="album" value="In Utero">
+            In Utero
+        </label>
+        
+        <p>Choose your often listening song?</p>    
+        <label>
+            <input type="checkbox" name="song" id="song" value="Smells Like Teen spirit">
+            Smells Like Teen spirit
+        </label>
+        
+        <label>
+            <input type="checkbox" name="song" id="song" value="Come As You Are">
+            Come As You Are
+        </label>
+        
+        <label>
+            <input type="checkbox" name="song" id="song" value="The Man Who Sold The World">
+           The Man Who Sold The World
+        </label>
+        
+        <label>
+            <input type="checkbox" name="song" id="song" value="Lithium">
+            Lithium
+        </label>
+
+        <label for="comment">
+            <p>Any comments and suggestions?</p>
+            <textarea id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        </label>
+        
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
